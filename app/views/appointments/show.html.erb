@@ -1,0 +1,6 @@
+<h2>Appointment details</h2>
+
+<p>Time: <%= @appointment.appointment_datetime %></p>
+<p>Patient: <%= link_to @appointment.patient.name, @appointment.patient %>, who is <%= @appointment.patient.age %> years old</p>
+<p>Doctor: <%= link_to @appointment.doctor.name, @appointment.doctor %>, <%= @appointment.doctor.department %></p>
+
