@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'patient/all'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :doctors
-  resources :patients
+  resources :doctors, only: [:index, :show]
+  resources :patients, only: [:index, :show]
   resources :appointments, only: [:show]
 end
