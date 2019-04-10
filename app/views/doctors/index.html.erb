@@ -1,0 +1,6 @@
+<h1>Seattle Grace Hospital</h1>
+<h2>All Doctors</h2>
+
+<% @doctors.each do |dr|%>
+<li><%= link_to dr.name, dr%> (<%= dr.patients.count%> patients)</li>
+<% end%>
