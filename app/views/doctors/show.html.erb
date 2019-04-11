@@ -1,5 +1,5 @@
 <% @doctor.appointments.each do |x| %>
-<p><%= x.appointment_datetime.to_datetime.strftime('%B %d, %Y at %H:%M')%></p>
+<p><%= x.appointment_datetime.strftime('%B %d, %Y at %H:%M')%></p>
 <% end %>
 
 <% @doctor.patients.each do |patient| %>
